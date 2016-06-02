@@ -10,8 +10,11 @@ import android.view.View;
 import java.util.*;
 
 //TODO Tie all the views together
+//TODO Loading/storage for all the activities/locations/etc
 //TODO Create a robust random number generator
 //TODO Set up the scoring page
+//TODO Create timer for game play
+//TODO Figure out Dialog displays
 
 public class MainActivity extends Activity {
     //Class variables
@@ -70,6 +73,10 @@ public class MainActivity extends Activity {
         viewStack.push(R.layout.activity_team_names);
     }
     //I Might refactor all the layout names later. This might not end well.
+/*  until I have a better idea I will just have a separate method to handle every continue button
+    it'll be a bit messy. ideally need a solution. basically will need a method to open every view
+    OR route every button to one method which will send to different views based on ref ID
+ */
     public void openPrefs(View view) {
         //Intent intent = new Intent(this, DisplayMessageActivity.class);
     }
