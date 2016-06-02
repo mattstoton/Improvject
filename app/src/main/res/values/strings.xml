@@ -1,0 +1,18 @@
+<resources>
+    <!--Generics-->
+    <string name="back_button">Back</string>
+    <string name="continue_button">Continue</string>
+
+    <!--MainActivity-->
+    <string name="app_name">Improvject</string>
+    <string name="play_button">New Game</string>
+    <string name="practice_button">Practice</string>
+    <string name="rules_button">Rules</string>
+    <string name="tips_button">Tips and Tricks</string>
+    <string name="settings_button">Settings</string>
+    <string name="extras_button">Extras</string>
+
+    <!--Team Names-->
+    <string name="enter_team_names">Enter Team Names</string>
+
+</resources>
