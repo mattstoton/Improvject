@@ -7,7 +7,7 @@ import android.view.View;
 
 public class EndActivity extends Activity {
 
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,9 @@ public class EndActivity extends Activity {
     }
 
     public void goForward(View view) {
-        Intent intent = new Intent(this, GameplayActivity.class);
+        Intent intent = new Intent(this, ScoringActivity.class);
         startActivity(intent);
     }
+
+
 }

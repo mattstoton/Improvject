@@ -18,7 +18,7 @@ public class GameplayActivity extends Activity {
     }
 
     public void goForward(View view) {
-        Intent intent = new Intent(this, GameplayActivity.class);
+        Intent intent = new Intent(this, EndActivity.class);
         startActivity(intent);
     }
 

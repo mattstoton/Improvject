@@ -25,7 +25,8 @@
         android:text="Mix Up!"
         android:id="@+id/button17"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="mixUp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,5 +45,6 @@
         android:text="@string/continue_button"
         android:id="@+id/mixUpContinue"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="goForward" />
 </RelativeLayout>
