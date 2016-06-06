@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import junit.framework.Assert;
+
 import java.util.*;
 
 //TODO Tie all the views together
@@ -16,7 +18,7 @@ import java.util.*;
 //TODO Create timer for game play
 //TODO Figure out Dialog displays
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
     //Class variables
     private static String TeamName1 = "Team 1"; //I don't remember if this is a good idea or not
     private static String TeamName2 = "Team 2"; //yolo
@@ -52,6 +54,14 @@ public class MainActivity extends Activity {
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
     }*/
 
+    @Override
+    public void onClick(View view) {
+
+        System.out.println("onclick listener fire SUCCESS");
+        //if this doesnt work Ill try and set teamnamesactivity's listener when I present it
+
+    }
+
     //I'll clean this up later, refactor it into one method later
 
     //Main Screen Button methods
@@ -66,17 +76,23 @@ public class MainActivity extends Activity {
         to keep things neat. This is a game though so I think its okay for its design to be more
         centralized and not split among the views or I'll be passing data back and forth between views.
 
+        In hindsight, I think it likely that I will refactor everything to use activites,
+        probably after I have a working version. Hence why all the activity classes are still here.
+
         At some point I will also condense the views. We have way too many.
 
          */
-        setContentView(R.layout.activity_team_names);
-        viewStack.push(R.layout.activity_team_names);
+        //setContentView(R.layout.activity_team_names);
+        //viewStack.push(R.layout.activity_team_names);
+        Intent newGame = new Intent(this, TeamNamesActivity.class);
+        startActivity(newGame);
     }
     //I Might refactor all the layout names later. This might not end well.
 /*  until I have a better idea I will just have a separate method to handle every continue button
     it'll be a bit messy. ideally need a solution. basically will need a method to open every view
     OR route every button to one method which will send to different views based on ref ID
  */
+
     public void openPrefs(View view) {
         //Intent intent = new Intent(this, DisplayMessageActivity.class);
     }
@@ -100,6 +116,52 @@ public class MainActivity extends Activity {
     public void openPractice(View view) {
         //Intent intent = new Intent(this, DisplayMessageActivity.class);
     }
+
+    /*public void openView(View view) {
+        int viewId = view.getId();
+        if (viewParent.getId() == R.layout.activity_team_names) {
+            System.out.println("parent is team names SUCCESS");
+        }
+        if (view.getId() == R.id.teamNamesContinue) {
+            System.out.println("button name is teamNamesContinue SUCCESS");
+        }
+        System.out.println("Nothing else printed FAIL");
+        switch (viewId) {
+            case R.id.teamNamesContinue:
+                setContentView(R.layout.activity_game_setup);
+                break;
+            case R.id.secretObjectContinue:
+            case R.id.scoringResultContinue:
+            case R.id.scoringContinue:
+            case R.id.passTeam1Continue:
+            case R.id.passTeam2Continue:
+            case R.id.mixUpContinue:
+            case R.id.gameplayContinue:
+            case R.id.gamesetupContinue:
+        }
+
+
+    }*/
+/*
+    public void openGameSetup(View view) {
+
+    }
+
+    public void openGameSetup(View view) {
+
+    }
+
+    public void openGameSetup(View view) {
+
+    }
+
+    public void openGameSetup(View view) {
+
+    }
+
+    public void openGameSetup(View view) {
+
+    }*/
 
     //Randomization
 

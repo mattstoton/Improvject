@@ -26,16 +26,18 @@
         android:text="Reload"
         android:id="@+id/button8"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="reload" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/continue_button"
-        android:id="@+id/button7"
+        android:id="@+id/gamesetupContinue"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="goForward"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,7 +64,7 @@
         android:text="Activity"
         android:id="@+id/textView8"
         android:layout_alignTop="@+id/textView7"
-        android:layout_toStartOf="@+id/button7" />
+        android:layout_toStartOf="@+id/gamesetupContinue" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -71,7 +73,8 @@
         android:text="Quit"
         android:id="@+id/button13"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="goQuit" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -80,7 +83,8 @@
         android:text="Mix Up"
         android:id="@+id/button14"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="mixUp" />
 
     <TextView
         android:layout_width="wrap_content"

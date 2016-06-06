@@ -7,28 +7,42 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Black.NoTitleBar">
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        >
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TeamNamesActivity" />
-        <activity android:name=".PassTeam1Activity" />
-        <activity android:name=".SecretObjectActivity" />
-        <activity android:name=".GameSetupActivity" />
-        <activity android:name=".GameplayActivity" />
-        <activity android:name=".ScoringActivity" />
-        <activity android:name=".FillerActivity" />
-        <activity android:name=".EndActivity" />
-        <activity android:name=".ScoringResultActivity" />
-        <activity android:name=".PassTeam2Activity" />
-        <activity android:name=".MixUpActivity" />
-        <activity android:name=".RulesActivity"></activity>
+        <activity android:name=".TeamNamesActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PassTeam1Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".SecretObjectActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".GameSetupActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".GameplayActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ScoringActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".FillerActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".EndActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".ScoringResultActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PassTeam2Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".MixUpActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".RulesActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

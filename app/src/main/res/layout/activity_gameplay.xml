@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="Location"
         android:id="@+id/textView9"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="Object"
         android:id="@+id/textView10"
         android:layout_alignTop="@+id/textView9"
         android:layout_centerHorizontal="true" />
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="Activity"
         android:id="@+id/textView11"
         android:layout_alignTop="@+id/textView10"
         android:layout_alignParentEnd="true" />
@@ -41,18 +41,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="Team1 Name"
         android:id="@+id/textView12"
+        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/textView10"
-        android:layout_marginTop="33dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="Timer"
         android:id="@+id/textView13"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue Early"
+        android:id="@+id/gameplayContinue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:id="@+id/button7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goQuit" />
 </RelativeLayout>
